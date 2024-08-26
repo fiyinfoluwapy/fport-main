@@ -38,6 +38,10 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+}
+.containeri {
+    width: var(--container-width-lg);
+    margin: 0 auto;
     padding: 0 5rem;
 }
 
@@ -553,7 +557,7 @@ footer ul li a:hover {
 
     .categories {
         height: fit-content;
-        width: fit-content;
+        
     }
 
     .categories_container {
