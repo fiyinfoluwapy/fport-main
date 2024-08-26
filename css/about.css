@@ -1,0 +1,274 @@
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+/*--about achievement--*/
+.about_achievements {
+    margin-top: 3rem;
+}
+
+.about__achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    padding: 4rem;
+}
+
+.about__achievements-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
+    height: 9.375rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.card:hover {
+    min-height: 22.375rem;
+}
+
+.card-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 9.375rem;
+    width: 100%;
+    transition: var(--transition);
+    background: var(--color-bg1);
+}
+
+.card-top>h3 {
+    font-size: 2rem;
+}
+
+.achievement__icon {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card:nth-child(1) .achievement__icon {
+    color: var(--color-white);
+    background-color: var(--color-success);
+}
+
+.card:nth-child(2) .achievement__icon {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.card:nth-child(3) .achievement__icon {
+    color: var(--color-white);
+    background-color: var(--color-danger);
+}
+
+.card:hover>.card-top {
+    color: var(--color-white);
+    background: var(--color-bg2);
+}
+
+.card-bottom {
+    box-sizing: border-box;
+    height: 14rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: var(--color-success);
+}
+
+.card:nth-child(1) .card-bottom {
+    background: var(--color-success);
+}
+
+.card:nth-child(2) .card-bottom {
+    background: var(--color-primary);
+}
+
+.card:nth-child(3) .card-bottom {
+    background: var(--color-danger);
+}
+
+
+.card-bottom>p {
+    color: var(--color-white);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.card-bottom a {
+    background: #eee;
+    color: var(--color-success);
+    display: inline-block;
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+
+.card-bottom a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #eee;
+}
+
+/*--about fiyinfoluwa--*/
+
+.about_fi_space {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.fi_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.about_fi_left h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.about_fi_left p {
+    margin: 1rem 0 3rem;
+}
+
+.about_fi_left {
+    margin-right: 4rem;
+}
+
+.team_fi {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team_fi:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team_fi-image img {
+    filter: saturate(0);
+}
+
+.team_fi:hover img {
+    filter: saturate(1);
+}
+
+.team_fi_info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team_fi_info p {
+    color: var(--color-light);
+}
+
+.fi_socials {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.fi_socials a {
+    padding: 1.5rem;
+}
+
+.team_fi:hover .fi_socials {
+    right: 0;
+}
+
+/*=================RESPONSIVE  STYLING===============*/
+
+/*=================TABLETS  MEDIA QUERIES===============*/
+@media screen and (max-width: 1024px) {
+   
+    .about_achievements {
+        margin-top: 2rem;
+    }
+
+    .about__achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .about__achievements-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .fi_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .about_fi_left{
+        margin-right: 0;
+    }
+    .team_fi {
+        padding: 1rem;
+    }
+}
+
+/*=================MOBILE  MEDIA QUERIES===============*/
+
+@media screen and (max-width: 600px) {
+   
+    .about__achievements-container{
+        padding: 1rem;
+    }
+    .achievements__cards{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .fi_container{
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+    .team_fi{
+        padding: 1rem;
+    }
+    .team_fi p{
+        margin-bottom: 1.5rem;
+    }
+}
