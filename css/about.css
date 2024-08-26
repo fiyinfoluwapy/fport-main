@@ -151,6 +151,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 4rem;
+    padding: 4rem;
 }
 
 .about_fi_left h1 {

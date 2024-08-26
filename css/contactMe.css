@@ -27,6 +27,7 @@
     margin: 7 auto;
     border-radius: 1rem;
     margin-top: 12rem;
+    padding: 4rem;
 }
 .contact__aside{
     background-color: var(--color-primary);

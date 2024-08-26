@@ -39,10 +39,8 @@ body {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
-.containeri {
-    width: var(--container-width-lg);
-    margin: 0 auto;
-    padding: 0 5rem;
+.bold__characters{
+    font-size: 2.4rem;
 }
 
 section {
@@ -198,6 +196,7 @@ header {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 4rem;
+    padding: 4rem;
 }
 
 .categories_left {
@@ -406,6 +405,7 @@ footer {
 
 .footer_container>div h4 {
     margin-bottom: 1.2rem;
+    font-size: 2rem;
 }
 
 .footer_container>div a:hover {
@@ -434,7 +434,7 @@ footer ul li a:hover {
 .social_media {
     display: inline-block;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 
 }
 
