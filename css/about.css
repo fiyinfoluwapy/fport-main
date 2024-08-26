@@ -26,8 +26,8 @@
 .about__achievements-container {
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 5rem;
-    padding: 4rem;
+    gap: 4rem;
+    padding: 5rem;
 }
 
 .about__achievements-right>p {

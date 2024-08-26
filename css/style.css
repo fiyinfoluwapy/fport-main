@@ -39,8 +39,11 @@ body {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
-.bold__characters{
-    font-size: 2.4rem;
+
+.special__headers{
+    font-family: 'Cabin Sketch', sans-serif;
+    font-size: 2rem;
+    color: var(--color-danger);
 }
 
 section {
@@ -82,7 +85,7 @@ a {
 
 .special__case {
     font-family: 'Cabin Sketch', sans-serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 img {
@@ -183,7 +186,7 @@ header {
 /*=================Languages/Tech STYLING===============*/
 .categories {
     background: var(--color-bg1);
-    height: 32rem;
+    height: 34rem;
 
 }
 
